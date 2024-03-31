@@ -5,7 +5,7 @@ name: 'C++ CI'
 on:
   push:
     branches:
-      - master
+      - main
       - build_test_deploy
 
 jobs:
