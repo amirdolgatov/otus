@@ -17,7 +17,7 @@ jobs:
       - run: cd helloworld
       - run: pwd
       - run: ls
-      - run: cmake . -DPATCH_VERSION=${{ github.run_number }}
+      - run: cmake helloworld -DPATCH_VERSION=${{ github.run_number }}
       - run: cmake --build .
       - run: cmake --build . --target package
       - name: Create Release
