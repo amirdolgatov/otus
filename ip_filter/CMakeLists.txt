@@ -14,6 +14,10 @@ set_target_properties(_ip_filter_ PROPERTIES
         CXX_STANDARD_REQUIRED ON
 )
 
+target_include_directories(_ip_filter_
+        PRIVATE "${CMAKE_BINARY_DIR}"
+)
+
 install(TARGETS _ip_filter_ RUNTIME DESTINATION bin)
 
 set(CPACK_GENERATOR DEB)
