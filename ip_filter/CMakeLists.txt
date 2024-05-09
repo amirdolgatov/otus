@@ -5,6 +5,8 @@ set(PROJECT_VESRION 0.0.${PATCH_VERSION})
 
 project(ip_filter)
 
+configure_file(version.h.in version.h)
+
 add_executable(_ip_filter_ main.cpp)
 
 set_target_properties(_ip_filter_ PROPERTIES
