@@ -4,6 +4,7 @@
 #include <iterator>
 #include <algorithm>
 #include <cstring>
+#include "version.h"
 
 /// Аналог функции find_first_of()
 inline int firstOccurrence(const std::string& str, int begin, int end, char c){
