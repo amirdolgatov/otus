@@ -16,6 +16,8 @@ jobs:
       - uses: actions/checkout@v2
         with:
           submodules: true
+      - run: ls -a
+      - run: pwd
       - run: cmake . -DPATCH_VERSION=${{ github.run_number }} 
       - run: cmake --build .
       - run: cmake --build . --target test
