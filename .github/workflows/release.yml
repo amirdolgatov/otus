@@ -14,11 +14,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-        with:
-          submodules: true
       - run: ls -a
       - run: pwd
-      - run: cmake . -DPATCH_VERSION=${{ github.run_number }} 
+      - run: cmake ip_filter -DPATCH_VERSION=${{ github.run_number }} 
       - run: cmake --build .
       - run: cmake --build . --target test
       - run: cmake --build . --target package
