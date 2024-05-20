@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "ip_filter"
+			"path" : "_ip_filter_"
 		}
 	],
 	"backtrace" : 1,
@@ -10,7 +10,10 @@
 	{
 		"commands" : 
 		[
-			"add_executable"
+			"add_executable",
+			"install",
+			"target_include_directories",
+			"set_target_properties"
 		],
 		"files" : 
 		[
@@ -24,7 +27,25 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 6,
+				"line" : 10,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 21,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 17,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 12,
 				"parent" : 0
 			}
 		]
@@ -35,7 +56,14 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g -fdiagnostics-color=always"
+					"fragment" : "-g -std=gnu++14 -fdiagnostics-color=always"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 3,
+					"path" : "/home/user/Projects/otus/ip_filter/cmake-build-debug"
 				}
 			],
 			"language" : "CXX",
@@ -43,9 +71,9 @@
 			{
 				"backtraces" : 
 				[
-					1
+					4
 				],
-				"standard" : "17"
+				"standard" : "14"
 			},
 			"sourceIndexes" : 
 			[
@@ -53,7 +81,21 @@
 			]
 		}
 	],
-	"id" : "ip_filter::@6890427a1f51a3e7e1df",
+	"id" : "_ip_filter_::@6890427a1f51a3e7e1df",
+	"install" : 
+	{
+		"destinations" : 
+		[
+			{
+				"backtrace" : 2,
+				"path" : "bin"
+			}
+		],
+		"prefix" : 
+		{
+			"path" : "/usr/local"
+		}
+	},
 	"link" : 
 	{
 		"commandFragments" : 
@@ -69,8 +111,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "ip_filter",
-	"nameOnDisk" : "ip_filter",
+	"name" : "_ip_filter_",
+	"nameOnDisk" : "_ip_filter_",
 	"paths" : 
 	{
 		"build" : ".",
